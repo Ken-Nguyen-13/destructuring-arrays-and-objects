@@ -39,3 +39,10 @@ const obj2 = {
 };
 const {key1: k, key2: l, nestedObj: { key3: m, key4: n }} = obj2;
 console.log(k,l,m,n) // --> "1 2 3 4"!!!
+
+const arr3 = [1, 2, 3];
+let obj3 = {};
+[obj3.a, obj3.b, obj3.c] = arr3;
+console.log(obj3)
+
+console.log(Math.log(10), 10 / Math.E, Math.log(Math.E), Math.log(Math.PI))
