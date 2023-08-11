@@ -44,5 +44,3 @@ const arr3 = [1, 2, 3];
 let obj3 = {};
 [obj3.a, obj3.b, obj3.c] = arr3;
 console.log(obj3)
-
-console.log(Math.log(10), 10 / Math.E, Math.log(Math.E), Math.log(Math.PI))
