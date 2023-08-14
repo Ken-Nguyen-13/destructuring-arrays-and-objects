@@ -107,14 +107,17 @@ Destructuring
 ‘Enhanced’ object assignment (same key/value shortcut)
  */
 
-const raceResults = (arrOfRacers) => {
+const raceResults = arrOfRacers => {
   let obj3 = {};
-  [obj3.firstPlace, obj3.secondPlace, obj3.thirdPlace, ...obj3.runnerUps] =
-    arrOfRacers;
+  [obj3.firstPlace, obj3.secondPlace, obj3.thirdPlace, ...obj3.runnerUps] = arrOfRacers;
   return obj3;
 };
+const raceResults2 = ([first, second, third, ...rest]) => ({first, second, third, rest});
 console.log(
   raceResults(["Tom1", "Tom2", "Tom3", "Tom4", "Tom5", "Tom6", "Tom7"])
+);
+console.log(
+  raceResults2(["Tom1", "Tom2", "Tom3", "Tom4", "Tom5", "Tom6", "Tom7"])
 );
 
 ////////////////////////////////---CHALLENGE_EXERCISE_2---////////////////////////////////
@@ -175,4 +178,3 @@ console.log(topSalary(salariesObj3))
 console.log(topSalary(salariesObj4))
 console.log(topSalary(salariesObj5))
 console.log(topSalary())
-
